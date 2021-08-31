@@ -1,6 +1,7 @@
 {
   "name": "polymer-debugging-extension",
   "version": "1.0.0",
-  "devDependencies": {
+  "dependencies": {
+    "vulcanize": "0.7.11"
   }
 }

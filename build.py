@@ -59,8 +59,9 @@ def closureCompile (srcs, dest):
   '''Compiles each file in `srcs` and puts results as `dest`'''
   for aSrc in srcs:
     print 'Compiling ' + aSrc + ' to ' + dest + '/' + aSrc + '...'
-    execCmd('java -jar ~/closureCompiler/compiler.jar ' +
-      '--language_in=ECMASCRIPT5 --js ' +
+    # execCmd('java -jar ~/closureCompiler/compiler.jar ' +
+    execCmd('google-closure-compiler ' +
+      '--language_in=ECMASCRIPT_2015 --js ' +
       aSrc + ' --js_output_file ' + dest + '/' + aSrc, silentFail=False)
 
 def createDirectoryStructure ():
